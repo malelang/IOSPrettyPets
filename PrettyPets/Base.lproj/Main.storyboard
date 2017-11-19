@@ -716,7 +716,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="0LC-lO-Lal">
                                 <rect key="frame" x="35" y="106" width="146" height="395.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre y apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKH-Q2-34E">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKH-Q2-34E">
                                         <rect key="frame" x="0.0" y="0.0" width="146" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -763,7 +763,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="kN7-j8-PGC">
                                 <rect key="frame" x="191" y="103" width="174" height="400"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre y apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evb-gH-fh3">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evb-gH-fh3">
                                         <rect key="frame" x="0.0" y="0.0" width="174" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -855,9 +855,9 @@
                     <connections>
                         <outlet property="contacto" destination="nRu-5x-6pZ" id="f2h-DJ-bbs"/>
                         <outlet property="direccion" destination="bar-kA-d8H" id="fXp-Q6-Goc"/>
+                        <outlet property="emailTextField" destination="evb-gH-fh3" id="BeY-HJ-3Iv"/>
                         <outlet property="gender" destination="lK3-F3-PUJ" id="UMC-ou-nQH"/>
-                        <outlet property="nombre" destination="evb-gH-fh3" id="Qi7-6P-FKk"/>
-                        <outlet property="pass" destination="ZDw-pX-RMh" id="nAx-Ye-G7x"/>
+                        <outlet property="passwordTextField" destination="ZDw-pX-RMh" id="1Ki-95-oxy"/>
                         <outlet property="username" destination="LQv-nF-ob9" id="KcD-w0-BXS"/>
                     </connections>
                 </viewController>
@@ -979,6 +979,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BA7-0J-Avj" kind="show" id="m7b-Qz-wDO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1003,7 +1006,6 @@
                     </view>
                     <connections>
                         <outlet property="edad" destination="7ml-hx-Mdx" id="IHj-94-roO"/>
-                        <outlet property="nombre" destination="9bC-OO-SAg" id="9xD-U9-0wa"/>
                         <outlet property="petKind" destination="sPa-dU-uyC" id="nOW-G9-kXY"/>
                         <outlet property="petSex" destination="jEa-eu-nxa" id="yRb-7w-gne"/>
                         <outlet property="raza" destination="hXd-Pb-3T6" id="Iun-PS-cMF"/>
@@ -1089,4 +1091,7 @@
         <image name="rsz_plus_add_blue (1)" width="50" height="50"/>
         <image name="rsz_settings-24-512" width="40" height="40"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="m7b-Qz-wDO"/>
+    </inferredMetricsTieBreakers>
 </document>

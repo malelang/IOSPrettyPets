@@ -11,11 +11,12 @@ import Foundation
 import UIKit
 
 class RegUsuarioController: UIViewController {
-    @IBOutlet weak var nombre: UITextField!
+   
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var direccion: UITextField!
     @IBOutlet weak var contacto: UITextField!
     @IBOutlet weak var username: UITextField!
-    @IBOutlet weak var pass: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var gender: UISegmentedControl!
     var genero:String!
     override func viewDidLoad() {

@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 
 class RegMascotaController: UIViewController {
-    @IBOutlet weak var nombre: UITextField!
+    
     @IBOutlet weak var edad: UITextField!
     @IBOutlet weak var petSex: UISegmentedControl!
     @IBOutlet weak var petKind: UISegmentedControl!
